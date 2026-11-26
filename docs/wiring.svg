@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="880" viewBox="0 0 1250 880" font-family="Helvetica, Arial, sans-serif">
+<rect width="1250" height="880" fill="#fbfaf7"/>
+<text x="30" y="40" font-size="24" font-weight="bold" fill="#333">Otter bot voice bench test: wiring</text>
+<rect x="90" y="70" width="230" height="710" rx="12" fill="#1d3b2a" stroke="#0e2015"/>
+<text x="110" y="100" font-size="15" fill="#fff" font-weight="bold">ESP32-S3 DevKitC</text>
+<text x="110" y="768" font-size="12" fill="#cfe">left header J1 · BOOT = talk</text>
+<circle cx="290" cy="120" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="125" font-size="14" text-anchor="end" fill="#fff">3V3</text>
+<circle cx="290" cy="150" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="155" font-size="14" text-anchor="end" fill="#fff">3V3</text>
+<circle cx="290" cy="180" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="185" font-size="14" text-anchor="end" fill="#9ab">RST</text>
+<circle cx="290" cy="210" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="215" font-size="14" text-anchor="end" fill="#9ab">GPIO4</text>
+<circle cx="290" cy="240" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="245" font-size="14" text-anchor="end" fill="#fff">GPIO5</text>
+<circle cx="290" cy="270" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="275" font-size="14" text-anchor="end" fill="#fff">GPIO6</text>
+<circle cx="290" cy="300" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="305" font-size="14" text-anchor="end" fill="#fff">GPIO7</text>
+<circle cx="290" cy="330" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="335" font-size="14" text-anchor="end" fill="#fff">GPIO15</text>
+<circle cx="290" cy="360" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="365" font-size="14" text-anchor="end" fill="#fff">GPIO16</text>
+<circle cx="290" cy="390" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="395" font-size="14" text-anchor="end" fill="#fff">GPIO17</text>
+<circle cx="290" cy="420" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="425" font-size="14" text-anchor="end" fill="#9ab">GPIO18</text>
+<circle cx="290" cy="450" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="455" font-size="14" text-anchor="end" fill="#9ab">GPIO8</text>
+<circle cx="290" cy="480" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="485" font-size="14" text-anchor="end" fill="#9ab">GPIO3</text>
+<circle cx="290" cy="510" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="515" font-size="14" text-anchor="end" fill="#9ab">GPIO46</text>
+<circle cx="290" cy="540" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="545" font-size="14" text-anchor="end" fill="#9ab">GPIO9</text>
+<circle cx="290" cy="570" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="575" font-size="14" text-anchor="end" fill="#9ab">GPIO10</text>
+<circle cx="290" cy="600" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="605" font-size="14" text-anchor="end" fill="#9ab">GPIO11</text>
+<circle cx="290" cy="630" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="635" font-size="14" text-anchor="end" fill="#9ab">GPIO12</text>
+<circle cx="290" cy="660" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="665" font-size="14" text-anchor="end" fill="#9ab">GPIO13</text>
+<circle cx="290" cy="690" r="7" fill="#777" stroke="#000"/>
+<text x="275" y="695" font-size="14" text-anchor="end" fill="#9ab">GPIO14</text>
+<circle cx="290" cy="720" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="725" font-size="14" text-anchor="end" fill="#fff">5V</text>
+<circle cx="290" cy="750" r="7" fill="#f5c542" stroke="#000"/>
+<text x="275" y="755" font-size="14" text-anchor="end" fill="#fff">G</text>
+<rect x="760" y="80" width="210" height="260" rx="10" fill="#26408b" stroke="#132050"/>
+<text x="800" y="110" font-size="16" fill="#fff" font-weight="bold">MAX98357A amp</text>
+<circle cx="760" cy="130" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="135" font-size="14" fill="#fff">LRC</text>
+<circle cx="760" cy="160" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="165" font-size="14" fill="#fff">BCLK</text>
+<circle cx="760" cy="190" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="195" font-size="14" fill="#fff">DIN</text>
+<circle cx="760" cy="220" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="225" font-size="14" fill="#fff">GAIN</text>
+<text x="840" y="225" font-size="12" fill="#dde">leave open (9 dB)</text>
+<circle cx="760" cy="250" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="255" font-size="14" fill="#fff">SD</text>
+<text x="840" y="255" font-size="12" fill="#dde">leave open (on)</text>
+<circle cx="760" cy="280" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="285" font-size="14" fill="#fff">GND</text>
+<circle cx="760" cy="310" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="315" font-size="14" fill="#fff">VIN</text>
+<rect x="760" y="400" width="210" height="230" rx="10" fill="#26408b" stroke="#132050"/>
+<text x="800" y="430" font-size="16" fill="#fff" font-weight="bold">INMP441 mic</text>
+<circle cx="760" cy="450" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="455" font-size="14" fill="#fff">L/R</text>
+<text x="840" y="455" font-size="12" fill="#dde">jumper to GND</text>
+<circle cx="760" cy="480" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="485" font-size="14" fill="#fff">WS</text>
+<circle cx="760" cy="510" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="515" font-size="14" fill="#fff">SCK</text>
+<circle cx="760" cy="540" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="545" font-size="14" fill="#fff">SD</text>
+<circle cx="760" cy="570" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="575" font-size="14" fill="#fff">VDD</text>
+<circle cx="760" cy="600" r="7" fill="#f5c542" stroke="#000"/>
+<text x="776" y="605" font-size="14" fill="#fff">GND</text>
+<path d="M297,720 H420 V310 H753" fill="none" stroke="#d62728" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M297,750 H448 V280 H753" fill="none" stroke="#222222" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M297,240 H476 V160 H753" fill="none" stroke="#1f77b4" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M297,270 H504 V130 H753" fill="none" stroke="#2ca02c" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M297,300 H532 V190 H753" fill="none" stroke="#ff7f0e" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M297,120 H560 V570 H753" fill="none" stroke="#e377c2" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M297,750 H588 V600 H753" fill="none" stroke="#222222" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M297,330 H616 V510 H753" fill="none" stroke="#9467bd" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M297,360 H644 V480 H753" fill="none" stroke="#17becf" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M297,390 H672 V540 H753" fill="none" stroke="#8c564b" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<path d="M753,450 h-22 V600 h22" fill="none" stroke="#222" stroke-width="3" stroke-dasharray="6 4"/>
+<rect x="970" y="110" width="14" height="60" fill="#555"/>
+<text x="992" y="118" font-size="13" fill="#333">+</text>
+<text x="992" y="172" font-size="13" fill="#333">-</text>
+<path d="M984,125 H1110" stroke="#d62728" stroke-width="4"/>
+<path d="M984,155 H1110" stroke="#222" stroke-width="4"/>
+<circle cx="1150" cy="140" r="42" fill="#333" stroke="#111"/>
+<circle cx="1150" cy="140" r="18" fill="#666"/>
+<text x="1105" y="210" font-size="13" fill="#333">40 mm 4 Ω 3 W</text>
+<text x="760" y="720" font-size="15" fill="#444">• USB-C into the UART port · power is USB only</text>
+<text x="760" y="744" font-size="15" fill="#444">• Snap the antenna onto the IPEX jack first</text>
+<text x="760" y="768" font-size="15" fill="#444">• Never wire GPIO35-37 (PSRAM) or 0/3/45/46</text>
+</svg>

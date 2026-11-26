@@ -1,0 +1,5 @@
+firmware/otter_voice/secrets.h
+build/
+*.wav
+*.pcm
+__pycache__/
