@@ -26,9 +26,10 @@ Follow the [First Soldering Session Guide](https://docs.google.com/document/d/1t
 
 ![Wiring](wiring.png)
 
-1. Snap the Wi-Fi antenna onto the board's IPEX jack.
-2. Straddle the ESP32 across the breadboard's centre gap. Put the amp and mic on the other half,
-   each straddling the gap too.
+1. If your board has an IPEX antenna jack (a tiny gold socket by the module), snap the Wi-Fi antenna onto it.
+2. Straddle the ESP32 across the breadboard's centre gap. The amp and mic have a single row of
+   pins, so they can't straddle: lay each header along a row on the other half, so every pin sits
+   in its own 5-hole strip and no two pins share a strip.
 3. Wire the [pin map](../README.md#pin-map). Use the labels printed on your board's silkscreen,
    not header positions, because clone boards sometimes reorder pins.
 4. Add one short jumper from the mic's L/R pin to GND.
@@ -53,7 +54,7 @@ Follow the [First Soldering Session Guide](https://docs.google.com/document/d/1t
    click Upload. If the upload never starts, hold BOOT, tap RST, release BOOT, then try again.
 7. Open Serial Monitor at **115200** baud. You should see the menu.
 
-Same thing from a terminal:
+Same thing from a terminal (`arduino-cli board list` shows the port name to use):
 
 ```bash
 arduino-cli compile --upload -p /dev/cu.usbserial-XXXX \
@@ -92,7 +93,9 @@ Type a letter in the Serial Monitor's input box and press Enter.
 | Board resets while Devin talks | The USB port can't supply enough current. Use a powered hub or wall charger, or turn the volume down |
 | `WARNING: no PSRAM` | Tools > PSRAM > OPI PSRAM, then reflash |
 | Wi-Fi failed | 2.4 GHz network, antenna on, and the SSID typed exactly |
-| `WebSocket upgrade refused ... 403/404` | Wrong agent ID in `secrets.h`, or the agent's daily call cap (100) is used up |
+| `Server closed the conversation (code 3000 The AI agent ... does not exist.)` | Wrong agent ID in `secrets.h`: copy it again from the Slack thread or ElevenLabs > Agents |
+| Calls stop connecting after a busy day | The agent's daily call cap (100) is used up; it resets the next day |
+| LED never lights | Your board is a v1.1 with the RGB LED on GPIO38: set `STATUS_LED = 38` in `otter_voice.ino` and reflash. Everything else works without the LED |
 | Devin talks over itself or hears itself | Only hold BOOT while you speak: the mic is muted otherwise |
 
 ## Test the agent without hardware
