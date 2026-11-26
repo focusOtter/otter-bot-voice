@@ -289,6 +289,7 @@ void printMenu() {
 }
 
 void handleKey(char k) {
+  if (mode == CHAT && (k == 'm' || k == 'l')) stopChat();
   switch (k) {
     case 't': runToneTest(); break;
     case 'm': {
