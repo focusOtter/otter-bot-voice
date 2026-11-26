@@ -114,7 +114,8 @@ void micTask(void *) {
     } else if (mode == CHAT && chatLive) {
       // Stream real audio while BOOT is held, silence otherwise so the agent can tell the turn ended.
       if (!pttDown()) memset(pcm, 0, frames * 2);
-      xStreamBufferSend(micBuf, pcm, frames * 2, 0);
+      if (xStreamBufferSpacesAvailable(micBuf) >= frames * 2)  // whole chunk or nothing: keeps samples aligned
+        xStreamBufferSend(micBuf, pcm, frames * 2, 0);
     }
   }
 }
